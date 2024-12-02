@@ -29,6 +29,39 @@
             font-family: Arial, sans-serif;
             padding: 20px;
         }
+        /* Container for all skills */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px; /* Space between boxes */
+            justify-content: center; /* Center the boxes */
+            padding: 20px;
+        }
+
+    /* Individual skill box */
+        .skill-box {
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            padding: 20px;
+            width: 250px; /* Fixed width for consistent sizing */
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Heading for each skill */
+        .skill-box h3 {
+            margin-top: 0;
+            color: #333;
+            font-size: 1.2em;
+        }
+
+        /* Description for each skill */
+        .skill-box p {
+            color: #666;
+            font-size: 0.9em;
+        }
     </style>
 </head>
 <body>
@@ -48,10 +81,24 @@
     <p2>future programmer extraordinaire</p2>
 
     <h2>Skills</h2>
-    <p>Programming</p> <!-- (python) -->
-    <p>Game development</p> <!-- (Godot) -->
-    <p>Web development</p> <!-- (html) -->
-    <p>Problem solving</p> <!-- leet code -->
+    <div class="skills-container">
+        <div class="skill-box">
+            <h3>Programming</h3>
+            <p>Experienced in Python for developing efficient and scalable applications.</p>
+        </div>
+        <div class="skill-box">
+            <h3>Game Development</h3>
+            <p>Skilled in Godot for creating engaging 2D games.</p>
+        </div>
+        <div class="skill-box">
+            <h3>Web Development</h3>
+            <p>Proficient in HTML for building structured web pages.</p>
+        </div>
+        <div class="skill-box">
+            <h3>Problem Solving</h3>
+            <p>Enthusiast for solving challenges on platforms like LeetCode.</p>
+        </div>
+    </div>
 </body>
 </html>
 
