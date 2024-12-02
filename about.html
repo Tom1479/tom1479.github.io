@@ -5,26 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <style>
-        /* Basic Styling for the Navbar */
-        nav {
-            background-color: #333;
-            padding: 10px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 18px;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        .nav-links {
-            display: flex;
-        }
         body {
             font-family: Arial, sans-serif;
             padding: 20px;
@@ -33,16 +13,14 @@
 </head>
 <body>
     <!-- Navigation Menu -->
-    <nav>
-        <div class="logo">
-            <a href="index.html">Home</a>
-        </div>
-        <div class="nav-links">
-            <a href="about.html">About Me</a>
-            <a href="projects.html">Projects</a>
-            <a href="contact.html">Contact</a>
-        </div>
-    </nav>
+    <div id="nav-placeholder"></div>
+    <script>
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('nav-placeholder').innerHTML = data;
+            });
+    </script>
     
     <h1>About me</h1>
     <p1>yo</p1>
