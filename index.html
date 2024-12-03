@@ -83,11 +83,14 @@
             <p>Enthusiast for solving challenges on platforms like LeetCode.</p>
         </div>
     </div>
-    <footer>
-        <p>contact at
-        <p><a href="https://www.linkedin.com/in/thomas-forsyth-604a2633b/" target="_blank">LinkedIn</a> | <a href="https://github.com/Tom1479" target="_blank">GitHub</a>
-        | <a href="mailto:forsyth0037@gmail.com">forsyth0037@gmail.com</a></p>
-    </footer>
+    <div id="footer-placeholder"></div>
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
 </body>
 </html>
 
