@@ -7,6 +7,15 @@
     padding: 10px 20px;
     }
     
+    .nav-links {
+        display: flex; /* Align links horizontally */
+    }
+    
+    .home-link{
+        font-size: 24px;
+        font-weight: bold;
+    }  
+
     nav a {
         color: white; /* Text color */
         margin: 0 15px; /* Spacing between links */
@@ -15,22 +24,14 @@
     }
     
     nav a:hover {
+        text-decoration: none;
         transform: scale(1.2);
-        color: yellow; /* Highlight links on hover */
+        color: blue; /* Highlight links on hover */
     }
-    
-    .nav-links {
-        display: flex; /* Align links horizontally */
-    }
-    
-    .logo a{
-        font-size: 24px;
-        font-weight: bold;
-    }  
 </style>
 
 <nav>
-    <div class="logo">
+    <div class="home-link">
         <a href="index.html">Home</a>
     </div>
     <div class="nav-links">
