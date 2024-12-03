@@ -1,29 +1,48 @@
 <style>
     nav {
-            background-color: #333; /* Dark background */
-            display: flex; /* Flexbox for layout */
-            justify-content: space-between; /* Space out elements */
-            align-items: center; /* Vertically align items */
-            padding: 10px 20px;
+        background-color: #333; /* Dark background */
+        display: flex; /* Flexbox for layout */
+        justify-content: space-between; /* Space out elements */
+        align-items: center; /* Vertically align items */
+        padding: 10px 20px;
+    }
+    .nav-links {
+        display: flex; /* Align links horizontally */
+    }
+    /* Shared styles for all links */
+    .nav-links a{
+        font-size: 18px;
+        color: white; /* White text */
+        margin: 0 15px; /* Spacing */
+        text-decoration: none; /* Remove underline */
+        transition: all 0.3s ease; /* Smooth transition */
         }
 
-        /* Shared styles for all links */
-        nav a {
-            color: white; /* White text */
-            margin: 0 15px; /* Spacing */
-            text-decoration: none; /* Remove underline */
-            transition: all 0.3s ease; /* Smooth transition */
-        }
-
-        /* Hover effect for all links */
-        nav a:hover {
-            transform: scale(1.2); /* Enlarge slightly */
-            color: blue; /* Change color */
-        }
+    /* Hover effect for all links */
+    .nav-links a:hover {
+        transform: scale(1.2); /* Enlarge slightly */
+        color: purple; /* Change color */
+    }
+    .home-links a{
+        font-size: 24px;
+        color: white; /* White text */
+        margin: 0 15px; /* Spacing */
+        text-decoration: none; /* Remove underline */
+        transition: all 0.3s ease; /* Smooth transition */
+    }
+    /* Hover effect for all links */
+    .home-links a:hover {
+        transform: scale(1.2); /* Enlarge slightly */
+        color: purple; /* Change color */
+    }
 </style>
 
 <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About Me</a>
-    <a href="projects.html">Projects</a>
+    <div class="home-link">
+        <a href="index.html">Home</a>
+    </div>
+    <div class="nav-links">
+        <a href="about.html">About Me</a>
+        <a href="projects.html">Projects</a>
+    </div>
 </nav>
