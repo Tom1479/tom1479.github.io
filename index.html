@@ -50,16 +50,14 @@
 </head>
 <body>
     <!-- Navigation Menu -->
-    <nav>
-        <div id="nav-placeholder"></div>
-        <script>
-            fetch('nav.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('nav-placeholder').innerHTML = data;
-                });
-        </script>
-    </nav>
+    <div id="nav-placeholder"></div>
+    <script>
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('nav-placeholder').innerHTML = data;
+            });
+    </script>
 
     <h1>Hi, im Thomas Forsyth</h1>
     <p2>future programmer extraordinaire</p2>
