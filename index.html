@@ -8,7 +8,12 @@
         body {
             font-family: Arial, sans-serif;
         }
- 
+        nav {
+            padding: 0; /* Ensure no padding is applied to the nav */
+            margin: 0;  /* Ensure no margin is applied to the nav */
+            background-color: #333;
+            width: 100%; /* Ensure nav takes up the full width */
+        }
         /* Container for all skills */
         .skills-container {
             display: flex;
@@ -50,14 +55,16 @@
 </head>
 <body>
     <!-- Navigation Menu -->
-    <div id="nav-placeholder"></div>
-    <script>
-        fetch('nav.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('nav-placeholder').innerHTML = data;
-            });
-    </script>
+    <nav>
+        <div id="nav-placeholder"></div>
+        <script>
+            fetch('nav.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('nav-placeholder').innerHTML = data;
+                });
+        </script>
+    </nav>
 
     <h1>Hi, im Thomas Forsyth</h1>
     <p2>future programmer extraordinaire</p2>
