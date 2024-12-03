@@ -88,38 +88,40 @@
             });
     </script>
 
-    <h1>Hi, im Thomas Forsyth</h1>
-    <p2>future programmer extraordinaire</p2>
-
-    <hr>
+    <div class="content">
+        <h1>Hi, im Thomas Forsyth</h1>
+        <p2>future programmer extraordinaire</p2>
     
-    <h2>Skills</h2>
-    <div class="skills-container">
-        <div class="skill-box">
-            <h3>Programming</h3>
-            <p>Experienced in Python for developing efficient and scalable applications.</p>
+        <hr>
+        
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill-box">
+                <h3>Programming</h3>
+                <p>Experienced in Python for developing efficient and scalable applications.</p>
+            </div>
+            <div class="skill-box">
+                <h3>Game Development</h3>
+                <p>Skilled in Godot for creating engaging 2D games.</p>
+            </div>
+            <div class="skill-box">
+                <h3>Web Development</h3>
+                <p>Proficient in HTML for building structured web pages. like this one as well as css for the styling,,,,,,</p>
+            </div>
+            <div class="skill-box">
+                <h3>Problem Solving</h3>
+                <p>Enthusiast for solving challenges on platforms like LeetCode.</p>
+            </div>
         </div>
-        <div class="skill-box">
-            <h3>Game Development</h3>
-            <p>Skilled in Godot for creating engaging 2D games.</p>
-        </div>
-        <div class="skill-box">
-            <h3>Web Development</h3>
-            <p>Proficient in HTML for building structured web pages. like this one as well as css for the styling,,,,,,</p>
-        </div>
-        <div class="skill-box">
-            <h3>Problem Solving</h3>
-            <p>Enthusiast for solving challenges on platforms like LeetCode.</p>
-        </div>
+        <div id="footer-placeholder"></div>
+        <script>
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer-placeholder').innerHTML = data;
+                });
+        </script>
     </div>
-    <div id="footer-placeholder"></div>
-    <script>
-        fetch('footer.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('footer-placeholder').innerHTML = data;
-            });
-    </script>
 </body>
 </html>
 
