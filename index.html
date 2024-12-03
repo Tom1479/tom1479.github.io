@@ -5,15 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <style>
+        html, body {
+            margin: 0;  /* Remove default margin */
+            padding: 0; /* Remove default padding */
+            width: 100%; /* Ensure body and html take up the full width */
+            height: 100%; /* Ensure body and html take up the full height */
+        }
+
         body {
             font-family: Arial, sans-serif;
         }
-        nav {
-            padding: 0; /* Ensure no padding is applied to the nav */
-            margin: 0;  /* Ensure no margin is applied to the nav */
-            background-color: #333;
-            width: 100%; /* Ensure nav takes up the full width */
-        }
+       
         /* Container for all skills */
         .skills-container {
             display: flex;
@@ -55,16 +57,14 @@
 </head>
 <body>
     <!-- Navigation Menu -->
-    <nav>
-        <div id="nav-placeholder"></div>
-        <script>
-            fetch('nav.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('nav-placeholder').innerHTML = data;
-                });
-        </script>
-    </nav>
+    <div id="nav-placeholder"></div>
+    <script>
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('nav-placeholder').innerHTML = data;
+            });
+    </script>
 
     <h1>Hi, im Thomas Forsyth</h1>
     <p2>future programmer extraordinaire</p2>
