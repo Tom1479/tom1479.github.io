@@ -1,37 +1,42 @@
 <style>
     nav {
-        background-color: #333; /* Dark background */
-        display: flex; /* Use flexbox for alignment */
-        justify-content: space-between; /* Space out elements */
-        align-items: center; /* Vertically align items */
-        padding: 10px 20px;
+    background-color: #333; /* Dark background */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-between; /* Space out elements */
+    align-items: center; /* Vertically align items */
+    padding: 10px 20px;
     }
+    
     nav a {
         color: white; /* Text color */
         margin: 0 15px; /* Spacing between links */
         font-size: 18px; /* Text size */
         transition: all 0.3s ease;
     }
+    
     nav a:hover {
         transform: scale(1.2);
-        color: green;
+        color: purple; /* Highlight links on hover */
     }
+    
     .nav-links {
         display: flex; /* Align links horizontally */
     }
-    .logo a {
-        font-size: 24px; /* Make the logo text larger */
-        font-weight: bold; /* Emphasize the logo */
-        transition: all 0.3s ease; /* Smooth transition for logo */
+    
+    #home a {
+        font-size: 24px; /* Make the Home text larger */
+        font-weight: bold; /* Emphasize the Home link */
+        transition: all 0.3s ease; /* Smooth transition for scaling */
     }
-    nav .logo a:hover {
-        transform: scale(1.2);
-        color: pink;
+    
+    #home a:hover {
+        transform: scale(1.2); /* Apply scaling effect on hover */
+        color: red; /* Change Home link color to pink on hover */
     }
 </style>
 
 <nav>
-    <div class="logo">
+    <div id="home">
         <a href="index.html">Home</a>
     </div>
     <div class="nav-links">
