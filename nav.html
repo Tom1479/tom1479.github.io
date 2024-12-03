@@ -6,34 +6,31 @@
         align-items: center; /* Vertically align items */
         padding: 10px 20px;
     }
+        
     .nav-links {
         display: flex; /* Align links horizontally */
     }
+
     /* Shared styles for all links */
-    .nav-links a{
+    nav a {
         font-size: 18px;
         color: white; /* White text */
         margin: 0 15px; /* Spacing */
         text-decoration: none; /* Remove underline */
         transition: all 0.3s ease; /* Smooth transition */
-        }
+    }
 
-    /* Hover effect for all links */
-    .nav-links a:hover {
+        /* Hover effect for all links */
+    nav a:hover {
         transform: scale(1.2); /* Enlarge slightly */
         color: purple; /* Change color */
     }
-    .home-link a{
+
+        /* Special styles for the "Home" link */
+    .home-link a {
         font-size: 24px;
-        color: white; /* White text */
-        margin: 0 15px; /* Spacing */
-        text-decoration: none; /* Remove underline */
-        transition: all 0.3s ease; /* Smooth transition */
-    }
-    /* Hover effect for all links */
-    .home-link a:hover {
-        transform: scale(1.2); /* Enlarge slightly */
-        color: purple; /* Change color */
+        font-weight: bold; /* Bold text for the Home link */
+        transition: all 0.3s ease; /* Smooth transition for "Home" link */
     }
 </style>
 
