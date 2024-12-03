@@ -1,36 +1,26 @@
 <style>
     nav {
-        background-color: #333; /* Dark background */
-        display: flex; /* Use flexbox for alignment */
-        justify-content: space-between; /* Space out elements */
-        align-items: center; /* Vertically align items */
-        padding: 10px 20px;
-    }
+            background-color: #333; /* Dark background */
+            display: flex; /* Flexbox for layout */
+            justify-content: space-between; /* Space out elements */
+            align-items: center; /* Vertically align items */
+            padding: 10px 20px;
+        }
 
-    .nav-links {
-        display: flex; /* Align links horizontally */
-    }
+        /* Shared styles for all links */
+        nav a {
+            color: white; /* White text */
+            margin: 0 15px; /* Spacing */
+            text-decoration: none; /* Remove underline */
+            transition: all 0.3s ease; /* Smooth transition */
+        }
 
-    /* Base link styles */
-    nav a {
-        color: white; /* Text color */
-        margin: 0 15px; /* Spacing between links */
-        font-size: 18px; /* Text size for regular links */
-        text-decoration: none; /* Remove underline */
-        transition: all 0.3s ease; /* Smooth transitions */
-    }
+        /* Hover effect for all links */
+        nav a:hover {
+            transform: scale(1.2); /* Enlarge slightly */
+            color: blue; /* Change color */
+        }
 
-    /* Logo styles (default larger size) */
-    .home-link a {
-        font-size: 24px; /* Larger size for the Home link */
-        font-weight: bold; /* Make the Home link bold */
-    }
-
-    /* Unified hover effect */
-    nav a:hover {
-        transform: scale(1.2); /* Enlarge on hover */
-        color: red; /* Change color on hover */
-    }
 </style>
 
 <nav>
