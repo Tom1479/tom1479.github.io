@@ -1,16 +1,19 @@
 <style>
     nav {
-        position: sticky;
-        background-color: purple;
+        position: sticky; /* Keeps nav at the top when scrolling */
+        top: 0; /* Ensures it sticks to the top of the viewport */
+        background-color: purple; /* Nav background color */
         display: flex; /* Flexbox for layout */
         justify-content: space-between; /* Space out elements */
         align-items: center; /* Vertically align items */
         padding: 10px 20px;
+        z-index: 1000; /* Keeps nav above other elements */
     }
-        
+
     .nav-links {
         display: flex; /* Align links horizontally */
     }
+
     /* Shared styles for all links */
     nav a {
         font-size: 18px;
@@ -19,10 +22,12 @@
         text-decoration: none; /* Remove underline */
         transition: all 0.3s ease; /* Smooth transition */
     }
+
     nav .home {
         font-size: 24px;
         font-weight: bold; /* Bold the Home link */
     }
+
     /* Hover effect for all links */
     nav a:hover {
         transform: scale(1.2); /* Enlarge slightly */
@@ -32,9 +37,9 @@
 
 <nav>
     <a href="index.html" class="home">Home</a>
-    </div>
     <div class="nav-links">
         <a href="about.html">About Me</a>
         <a href="projects.html">Projects</a>
     </div>
 </nav>
+
