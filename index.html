@@ -11,21 +11,18 @@
             width: 100%; /* Ensure body and html take up the full width */
             height: 100%; /* Ensure body and html take up the full height */
         }
-
         body {
             background-image: url('HD wallpaper_ space, galaxy, vertical, portrait display.jpeg');
-            background-size: cover; /* Ensures the image covers the entire background, even if it gets cropped */
-            background-position: center; /* Centers the image */
+            background-size: cover;
+            background-position: center;
             background-attachment: fixed;
-            font-family: Arial, sans-serif;
-            min-height: 2600px;
         }
+
         .content {
-            height: 94%;
-            width: 92%; /* Set the width of the content */
+            min-height: 500px; /* Set the minimum height of the content */
+            padding-bottom: 100px; /* Space for the background to stretch */
+            background-color: #472a85; /* Optional: darken content box if desired */
             margin: 100px 50px; /* Center the content horizontally and add vertical spacing */
-            background-color: #472a85;
-            padding: 20px; /* Add some padding inside the content area */
             border-radius: 10px; /* Optional: Rounded corners */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow for depth */
         }
