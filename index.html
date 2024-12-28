@@ -119,6 +119,27 @@
         </div>
 
         <hr>
+        <div class="leetcode-stats">
+            <p>LeetCode Problems Solved: <span id="problems-solved">Loading...</span></p>
+        </div>
+    
+        <script>
+        // Replace 'your-username' with your actual LeetCode username
+            const username = 'Tom3_';
+            const apiUrl = `https://leetcode-stats-api.herokuapp.com/${username}`;
+    
+            // Fetch LeetCode data
+            fetch(apiUrl)
+                .then(response => response.json())
+                .then(data => {
+                    // Display the number of solved problems
+                    document.getElementById('problems-solved').textContent = data.totalSolved;
+                })
+                .catch(error => {
+                    console.error('Error fetching LeetCode stats:', error);
+                    document.getElementById('problems-solved').textContent = 'Error loading stats';
+                });
+        </script>
         
         <div id="footer-placeholder"></div>
         <script>
